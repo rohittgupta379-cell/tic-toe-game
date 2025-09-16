@@ -1,0 +1,83 @@
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+
+      color: #fff;
+      text-align: center;
+    }
+
+    main {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #CD5C5C;
+    }
+
+    #winner {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .game {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      border-radius: 15px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .box:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    .winner-highlight {
+      background: #00c853 !important;
+      color: #fff !important;
+      box-shadow: 0 0 20px #00c853;
+    }
+
+    #reset-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      color: #fff;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    #reset-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #ee0979, #ff6a00);
+    }
